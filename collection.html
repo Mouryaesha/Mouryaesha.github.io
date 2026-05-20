@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Full Lookbook | Stitched & Styled</title>
+    <style>
+        /* Import core architectural layouts from index for uniformity */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #fcfbf9; color: #2c3e50; line-height: 1.6; }
+        header { background-color: #fff; padding: 1.5rem 10%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.03); position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 1.5rem; font-weight: 700; letter-spacing: 1px; color: #0f1e36; text-decoration: none; }
+        nav a { margin-left: 2rem; text-decoration: none; color: #555; font-weight: 500; transition: color 0.3s; }
+        nav a:hover, nav a.active { color: #d4af37; }
+
+        .collection-banner {
+            background-color: #0f1e36;
+            color: #fff;
+            text-align: center;
+            padding: 4rem 10%;
+        }
+        .collection-banner h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .collection-banner p { color: #8aa0ba; font-size: 1.1rem; }
+
+        .gallery-section { padding: 4rem 10%; }
+        
+        .category-title {
+            font-size: 1.6rem;
+            color: #0f1e36;
+            margin: 2.5rem 0 1.5rem 0;
+            border-left: 4px solid #d4af37;
+            padding-left: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .card { background: #fff; border-radius: 6px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
+        .card img { width: 100%; height: 320px; object-fit: cover; }
+        .card-info { padding: 1.5rem; text-align: center; }
+        .card-info h3 { font-size: 1.15rem; color: #0f1e36; margin-bottom: 0.4rem; }
+        .card-info p { color: #666; font-size: 0.9rem; }
+
+        footer { background-color: #0f1e36; color: #fff; padding: 2rem 10%; text-align: center; margin-top: 4rem; }
+        .copyright { font-size: 0.85rem; color: #8aa0ba; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">STITCHED & STYLED</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="collection.html" class="active">Collection</a>
+            <a href="about.html">Our Story</a>
+        </nav>
+    </header>
+
+    <section class="collection-banner">
+        <h1>The Full Lookbook Portfolio</h1>
+        <p>15 Signature handcrafted patterns engineered for balance, posture, and elegance.</p>
+    </section>
+
+    <main class="gallery-section">
+
+        <h2 class="category-title">Bespoke Satchels</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=500" alt="Satchel 1">
+                <div class="card-info">
+                    <h3>The Heritage Satchel</h3>
+                    <p>Signature golden motifs structured with secure accent base leather flaps.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1566150905458-1bf1fc15a6a0?q=80&w=500" alt="Satchel 2">
+                <div class="card-info">
+                    <h3>Minimalist Work Satchel</h3>
+                    <p>Clean external envelope seams featuring dual-tone canvas contrast panels.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1600857062241-98e5dba7f214?q=80&w=500" alt="Satchel 3">
+                <div class="card-info">
+                    <h3>Vintage Messenger Satchel</h3>
+                    <p>Wider cross-cut proportions incorporating vintage side buckled strap links.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=500" alt="Satchel 4">
+                <div class="card-info">
+                    <h3>Midnight Clasp Satchel</h3>
+                    <p>Deep navy brocade textile framing balanced with rigid top-handle mounts.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="category-title">Crossbody & Slings</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=500" alt="Sling 1">
+                <div class="card-info">
+                    <h3>The Compact Crossbody</h3>
+                    <p>Streamlined box shape featuring drop-in metal chain shoulder configurations.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1524498250077-3a818866cbe0?q=80&w=500" alt="Sling 2">
+                <div class="card-info">
+                    <h3>Asymmetric Front Sling</h3>
+                    <p>Ergonomic teardrop frame contoured safely for snug, travel-ready chest wear.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?q=80&w=500" alt="Sling 3">
+                <div class="card-info">
+                    <h3>Crescent Moon Sling</h3>
+                    <p>Curved structural lines wrapping smoothly around body curves.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1594223274512-ad4803739b7c?q=80&w=500" alt="Sling 4">
+                <div class="card-info">
+                    <h3>The Daily Saddle Pouch</h3>
+                    <p>Rounded bottom seams with a direct-access quick-snap front closure magnetic array.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="category-title">Structured Tote Lines</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=500" alt="Tote 1">
+                <div class="card-info">
+                    <h3>The Color-Block Tote</h3>
+                    <p>Boxed corners mixed cleanly with raw natural linen upper third headers.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1605733513597-a8f8d410fe3c?q=80&w=500" alt="Tote 2">
+                <div class="card-info">
+                    <h3>Studio Utility Tote</h3>
+                    <p>Double outer side pockets built explicitly to stow measuring tapes and rulers.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?q=80&w=500" alt="Tote 3">
+                <div class="card-info">
+                    <h3>Tailored Denim Tote</h3>
+                    <p>Heavy canvas structural bases sewn with sturdy contrast denim panel wraps.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1575032617751-6ddec2089882?q=80&w=500" alt="Tote 4">
+                <div class="card-info">
+                    <h3>The Weekend Carryall</h3>
+                    <p>Maximum internal space with wide gusset distributions and reinforced strap hinges.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="category-title">Clutches & Frames</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1566150905458-1bf1fc15a6a0?q=80&w=500" alt="Clutch 1">
+                <div class="card-info">
+                    <h3>Classic Kiss-Lock Pouch</h3>
+                    <p>Vintage metal clasp framing applied over structured navy-gold backing.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1614179924047-e1cb49a0a0af?q=80&w=500" alt="Clutch 2">
+                <div class="card-info">
+                    <h3>The Box Minaudière</h3>
+                    <p>Hard-shell angular presentation wrapped tightly in premium heavy-weight jacquard.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?q=80&w=500" alt="Clutch 3">
+                <div class="card-info">
+                    <h3>The Wristlet Envelope</h3>
+                    <p>Sleek and flat silhouette equipped with a handy matching floral wrist anchor strap.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; 2026 Stitched & Styled. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

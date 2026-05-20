@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stitched & Styled | Handcrafted Artisan Bags</title>
+    <style>
+        /* Shared Core Brand Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fcfbf9;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 1.5rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #0f1e36; /* Deep Navy */
+            text-decoration: none;
+        }
+
+        nav a {
+            margin-left: 2rem;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover, nav a.active {
+            color: #d4af37; /* Gold Accent */
+        }
+
+        /* Hero Splash Banner */
+        .hero {
+            padding: 8rem 10%;
+            text-align: center;
+            background: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200') no-repeat center center/cover;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: #0f1e36;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #555;
+            max-width: 650px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #0f1e36;
+            color: #fff;
+            padding: 0.8rem 2.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #1a355e;
+            transform: translateY(-2px);
+        }
+
+        /* Section Global Settings */
+        .section-container {
+            padding: 5rem 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 3.5rem;
+            color: #0f1e36;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 2px;
+            background: #d4af37;
+            margin: 12px auto 0;
+        }
+
+        /* Home Page Preview Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+        }
+
+        .card-info {
+            padding: 1.8rem;
+            text-align: center;
+        }
+
+        .card-info span {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #d4af37;
+            font-weight: 600;
+        }
+
+        .card-info h3 {
+            font-size: 1.3rem;
+            margin: 0.3rem 0 0.6rem;
+            color: #0f1e36;
+        }
+
+        .card-info p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .center-btn {
+            text-align: center;
+        }
+
+        /* Footer Element */
+        footer {
+            background-color: #0f1e36;
+            color: #fff;
+            padding: 3rem 10% 2rem;
+            text-align: center;
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+            color: #8aa0ba;
+            border-top: 1px solid #1a3050;
+            padding-top: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            header { flex-direction: column; gap: 1rem; }
+            nav a { margin: 0 1rem; }
+            .hero h1 { font-size: 2.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">STITCHED & STYLED</a>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="collection.html">Collection</a>
+            <a href="about.html">Our Story</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Handcrafted Elegance</h1>
+        <p>Bespoke, artisan bag designs blending luxury textile patterns with functional modern everyday utility.</p>
+        <a href="collection.html" class="btn">Explore the Lookbook</a>
+    </section>
+
+    <section class="section-container">
+        <h2 class="section-title">Featured Creations</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=600" alt="Color-Block Tote">
+                <div class="card-info">
+                    <span>Tote Edition</span>
+                    <h3>The Color-Block Tote</h3>
+                    <p>Structured linen framing accentuating intricate royal navy floral canvas bases.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=600" alt="Heritage Satchel">
+                <div class="card-info">
+                    <span>Satchel Line</span>
+                    <h3>The Heritage Satchel</h3>
+                    <p>Timeless structured silhouettes finished with premium dual metallic clasps.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=600" alt="Compact Crossbody">
+                <div class="card-info">
+                    <span>Crossbody Line</span>
+                    <h3>The Compact Crossbody</h3>
+                    <p>A sleek frame designed to keep your absolute dynamic essentials lightweight.</p>
+                </div>
+            </div>
+        </div>
+        <div class="center-btn">
+            <a href="collection.html" class="btn" style="background-color: transparent; color: #0f1e36; border: 2px solid #0f1e36;">View All 15 Designs</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            &copy; 2026 Stitched & Styled. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
